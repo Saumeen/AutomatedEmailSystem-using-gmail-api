@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Automated Mail System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylemain1.css')}}" />
+</head>
+
+<body>
+    <div class="container-contact3">
+        <h4>
+            {% if count1|int > 0 and count1|int != 1000 %}
+            <p>There are some missing record </p>
+            Please check before send {% endif %} {% if count1|int == 1000 %}
+            <p>No Email Founds
+            </p> {% endif %} {% if count1|int == 0 %}
+            <p>Your Email is scanned and excel file is successfully exported.</p>> {% endif %}
+
+        </h4>
+    </div>
+</body>
+
+</html>

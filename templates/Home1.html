@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Automated Mail System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylemain1.css')}}" />
+    <!-- <link rel="stylesheet" type="text/css" href=" css/stylemain1.css" /> -->
+
+</head>
+
+<body>
+    <div class="container-contact3">
+        <div class="wrap-contact3">
+            <div class="container-box">
+
+                <div class="wrap-content0">
+                    <form class="contact3-form validate-form" action="/login" method="post" enctype="multipart/form-data">
+                        <span class=" contact3-form-title ">
+                            <h2>Automated Email System
+                         </h2>
+                         </span>
+                        <div class="wrap-input3">
+                            <span>Select Drive </span>
+                            <select name="drive">
+                                <option value="C:\">C:/</option>
+                                <option value="D:\">D:/</option>
+                                <option value="E:\">E:/</option>
+                                <option value="F:\">F:/</option>
+                            </select>
+                        </div>
+
+                        <div class="wrap-input3 ">
+                            <span>Folder Name </span>
+                            <input class="input3 " type="text" name="foldername" placeholder="Folder Name " required>
+
+                        </div>
+
+                        <div class="wrap-input3 ">
+                            <span>Select Student Database file
+                            </span>
+
+                            <input class="input2" type="file" name="db" placeholder="Studentdatabase file Name " required>
+                            <span class="focus-input3 "></span>
+                        </div>
+
+                        <div class="wrap-input3 ">
+                            <span>Database Id Field Name</span>
+                            <input class="input3 " type="text" name="idname" placeholder="Studentdatabase IDfield Name " required>
+                            <span class="focus-input3 "></span>
+                        </div>
+
+                        <div class="wrap-input3 ">
+                            <span>Compny Name </span>
+                            <input class="input3 " type="text" name="Query" placeholder="Compny Name " required>
+                            <span class="focus-input3 "></span>
+                        </div>
+                        <div class="wrap-input3 ">
+                            <span>Select Start Date </span>
+                            <input class="input3" type="date" name="date" placeholder="Date Picker " required>
+                            <span class="focus-input3 "></span>
+                        </div>
+
+                        <div>
+                            <!-- <button type="submit " class="btn-submit ">Submit</button class="btn-submit "> -->
+                            <input type="submit" class="btn-submit " name="submit " value="Submit ">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
